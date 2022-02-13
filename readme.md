@@ -1,7 +1,6 @@
 # NFTs Gallery
 
 - [GitHub](https://github.com/ayman-benammour/nfts-gallery)
-- [Live]
 
 ## Setup
 Run this followed commands:
