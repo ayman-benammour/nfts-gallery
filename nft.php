@@ -1,4 +1,4 @@
-<?
+<?php
     // Config php
     include 'includes/config.php';
     include 'includes/data.php';
@@ -17,7 +17,7 @@
 ?>
 
 <!-- HEADER -->
-<? include 'chunks/header.php' ?>
+<?php include 'chunks/header.php' ?>
 
 <!-- CONTAINER -->
 <section class="bg-white py-8">
@@ -77,10 +77,10 @@
                 <div class="w-full flex justify-between items-end flex-row-reverse">
 
                     <!-- If its sold -->
-                    <? if ( $nft['sold'] === true ) { ?>
+                    <?php if ( $nft['sold'] === true ) { ?>
 
                         <!-- Get owner -->
-                        <?$owner = $owners[$nft['owner']] ?>
+                        <?php $owner = $owners[$nft['owner']] ?>
 
                         <!-- Button Already sold -->
                         <div class="rounded-md shadow">
@@ -91,14 +91,14 @@
                         <p>Buy by <a class="text-gray-900 hover:text-black underline" href="owner.php?id=<?= $nft['owner'] ?>"><?= $owner['name'] ?></a> the <?= date('d/m/Y', $nft['saleDate']) ?></p>
  
                     <!-- If its not sold -->
-                    <? } elseif ( $nft['sold'] === false ) { ?>
+                    <?php } elseif ( $nft['sold'] === false ) { ?>
 
                         <!-- Button Buy -->
                         <div class="rounded-md shadow">
                             <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"> Buy this NFT </a>
                         </div>
 
-                    <? } ?>
+                    <?php } ?>
 
                 </div>
 
@@ -110,4 +110,4 @@
 </section>
 
 <!-- FOOTER -->
-<? include 'chunks/footer.php' ?>
+<?php include 'chunks/footer.php' ?>

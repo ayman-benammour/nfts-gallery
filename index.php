@@ -1,11 +1,11 @@
-<?
+<?php
     // Config php
-    include 'includes/config.php';
-    include 'includes/data.php';
+    include './includes/config.php';
+    include './includes/data.php';
 ?>
 
 <!-- HEADER -->
-<? include 'chunks/header.php' ?>
+<?php include 'chunks/header.php' ?>
 
 <!-- ARTICLES -->
 <section class="bg-white py-8">
@@ -22,8 +22,8 @@
         </nav>
 
         <!-- CONTENT -->
-        <? foreach ($nfts as $key => $nft) { ?>
-            <? $author = $authors[$nft['author']]?>
+        <?php foreach ($nfts as $key => $nft) { ?>
+            <?php $author = $authors[$nft['author']]?>
 
             <div class="w-full md:w-1/1 xl:w-1/4 p-6 flex flex-col">
 
@@ -54,10 +54,10 @@
 
             </div>
 
-        <? } ?>
+        <?php } ?>
 
     </div>
 </section>
 
 <!-- FOOTER -->
-<? include 'chunks/footer.php' ?>
+<?php include 'chunks/footer.php' ?>

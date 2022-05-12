@@ -1,4 +1,4 @@
-<?
+<?php
 
 // See all errors
 error_reporting(E_ALL);

@@ -1,11 +1,11 @@
-<?
+<?php
     // Config php
     include 'includes/config.php';
     include 'includes/data.php';
 ?>
 
 <!-- HEADER -->
-<? include 'chunks/header.php' ?>
+<?php include 'chunks/header.php' ?>
 
 <!-- OWNER INFOS -->
 <div class="container mx-auto h-96 bg-gray-900 flex items-center justify-evenly flex-col my-12">

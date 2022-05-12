@@ -1,5 +1,5 @@
 <!-- HEADER -->
-<? include 'chunks/header.php' ?>
+<?php include 'chunks/header.php' ?>
 
 <!-- OWNER INFOS -->
 <div class="container mx-auto h-96 bg-gray-900 flex items-center justify-center flex-col my-12">
@@ -13,4 +13,4 @@
 </div>
 
 <!-- FOOTER -->
-<? include 'chunks/footer.php' ?>
+<?php include 'chunks/footer.php' ?>

@@ -1,4 +1,4 @@
-<?
+<?php
     // Config php
     include 'includes/config.php';
     include 'includes/data.php';
@@ -17,7 +17,7 @@
 ?>
 
 <!-- HEADER -->
-<? include 'chunks/header.php' ?>
+<?php include 'chunks/header.php' ?>
 
 <!-- OWNER INFOS -->
 <div class="container mx-auto h-96 bg-gray-900 flex items-center justify-evenly flex-col my-12">
@@ -30,12 +30,12 @@
 
     <!-- SOCIALS MEDIAS -->
     <div class="flex w-96 items-center justify-evenly flex-row">
-        <? foreach ($socials as $key => $social) { ?>
+        <?php foreach ($socials as $key => $social) { ?>
             <p class="pt-1 text-gray-100 capitalize underline"><a href="<?= $social ?>"><?= $key ?></a></p>
-        <? } ?>
+        <?php } ?>
     </div>
 
 </div>
 
 <!-- FOOTER -->
-<? include 'chunks/footer.php' ?>
+<?php include 'chunks/footer.php' ?>
